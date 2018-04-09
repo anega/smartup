@@ -1,5 +1,15 @@
 (function ($) {
   $(document).ready(function () {
+    // Sticky header
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        $('#header').addClass('fixed')
+      }
+      else {
+        $('#header').removeClass('fixed')
+      }
+    })
+
     var acc = document.getElementsByClassName('accordion')
     var i
 
@@ -15,5 +25,7 @@
         }
       })
     }
+
+    $('#main-nav').stellarNav()
   })
 }(jQuery))

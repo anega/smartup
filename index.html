@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Startsmart</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stellarnav.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 </head>
 <body>
-<div class="section-wrap">
+<div id="header" class="section-wrap">
     <header class="section">
         <a href="#" class="logo">
             <img src="img/logo-smartup.png" alt="Smartup logo">
         </a>
-        <nav>
+        <nav id="main-nav" class="stellarnav">
             <ul>
                 <li><a href="#">Про нас</a></li>
                 <li><a href="#">Малюкам</a></li>
@@ -210,17 +211,29 @@
     </div>
 </div>
 
-<footer>
-    <img src="img/logo-smartup.png" alt="Smartup logo">
-    <div class="contact-us">
-        <h2>Контакти</h2>
-        <p><a href="#">0634253194</a></p>
-        <p>Напишіть нам <a href="mailto:smartup.prostir@gmail.com">smartup.prostir@gmail.com</a></p>
-        <p>Facebook <a href="#">fb</a></p>
+<footer class="section-wrap">
+    <div class="section">
+        <img src="img/logo-smartup.png" alt="Smartup logo">
+        <div class="contact-us">
+            <h2>Контакти</h2>
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="#">0634253194</a>
+            </p>
+            <p>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:smartup.prostir@gmail.com">smartup.prostir@gmail.com</a>
+            </p>
+            <p>
+                <i class="fab fa-facebook-f"></i>
+                <a href="#">Facebook</a>
+            </p>
+        </div>
     </div>
 </footer>
 
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/stellarnav.min.js"></script>
 </body>
 </html>

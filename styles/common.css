@@ -1,0 +1,13 @@
+body {
+  color: #223e49;
+}
+.section {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 0 15px;
+  }
+}
