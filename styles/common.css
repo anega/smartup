@@ -1,5 +1,6 @@
 body {
   color: #223e49;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .section {
   margin: 0 auto;
@@ -11,3 +12,16 @@ body {
     padding: 0 15px;
   }
 }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
