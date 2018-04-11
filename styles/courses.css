@@ -1,0 +1,123 @@
+#for-babies .section,
+#for-children .section {
+  padding: 60px 0;
+}
+.course-description h1 {
+  /*color: #fff;*/
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.boxes-list {
+  margin: 0 0 40px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: none;
+  border: none;
+  color: #223e49;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  padding: 0 30px 0 0;
+  outline: none;
+  min-height: 42px;
+  /*width: 100%;*/
+}
+.accordion:before,
+.accordion:after {
+  background: #223e49;
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  height: 2px;
+  width: 8px;
+}
+.accordion:before {
+  transform: rotate(-45deg);
+  right: 10px;
+}
+.accordion:after {
+  transform: rotate(45deg);
+  right: 15px;
+  -webkit-transition: right .2s;
+  -moz-transition: right .2s;
+  -ms-transition: right .2s;
+  -o-transition: right .2s;
+  transition: right .2s;
+}
+/*.accordion:hover:before,*/
+/*.accordion:hover:after,*/
+/*.active.accordion:before,*/
+/*.active.accordion:after {*/
+  /*background: #fff;*/
+/*}*/
+.active.accordion:after {
+  right: 10px;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  text-decoration: underline;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  margin-top: 15px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  text-align: left;
+  transition: max-height 0.2s ease-out;
+}
+.panel li {
+  line-height: 24px;
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+.panel li:before {
+  background: #223e49;
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  height: 1px;
+  width: 10px;
+}
+.course-information h1 {
+  font-size: 24px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.course-information .icon-with-description-list {
+  margin-bottom: 45px;
+}
+.course-information .icon-with-description-list li i {
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+.course-information .icon-with-description-list li h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.course-information .icon-with-description-list li p {
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 420px;
+}
+@media screen and (min-width: 768px) {
+  .boxes-list .box-item {
+    text-align: center;
+  }
+  .course-description .boxes-list .box-item {
+    float: left;
+    width: 33%;
+  }
+  .course-information .icon-with-description-list li {
+    float: left;
+    text-align: center;
+    width: 50%;
+  }
+}

@@ -1,0 +1,8 @@
+#for-children {
+  background: #6f9fcd;
+}
+#for-children .course-description .boxes-list .box-item p {
+  line-height: 20px;
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
