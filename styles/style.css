@@ -1,7 +1,8 @@
 @import "reset.css";
+@import "common.css";
 @import "banner.css";
 @import "babies-section.css";
-@import "common.css";
 @import "children-section.css";
+@import "contact-us.css";
 @import "courses.css";
 @import "header.css";
