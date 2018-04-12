@@ -1,8 +1,19 @@
 #banner {
   background: #ffd364;
+  position: relative;
 }
-#banner .banner-description,
-#banner .banner-image {}
+#banner:before {
+  background: url(../img/rocket-up.svg) left top repeat;
+  background-size: 32px 32px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .04;
+  z-index: -1;
+}
 #banner .banner-description h2 {
   color: #fff;
   font-size: 32px;
