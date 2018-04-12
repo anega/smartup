@@ -1,0 +1,38 @@
+footer {
+  height: 170px;
+}
+footer.section-wrap {
+  background: #f99132;
+  padding: 32px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+footer.section-wrap img {
+  float: left;
+  margin-right: 100px;
+  max-width: 160px;
+  width: 100%;
+}
+footer .contact-us {
+  overflow: hidden;
+}
+footer .contact-us h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .contact-us p {
+  display: inline-block;
+  margin-right: 32px;
+}
+footer .contact-us p i {
+  margin-right: 8px;
+}
+footer .contact-us p a {
+  color: #223e49;
+  text-decoration: none;
+}
+footer .contact-us p a:hover {
+  text-decoration: underline;
+}
