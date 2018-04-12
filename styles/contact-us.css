@@ -1,0 +1,18 @@
+#contact-us {
+  background: #ffd364;
+  margin-bottom: 170px;
+}
+#contact-us .section {
+  padding: 60px 0;
+}
+#contact-us h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+#contact-us p {
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+#contact-us p a {
+  color: #223e49;
+}
