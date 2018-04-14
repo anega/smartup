@@ -1,6 +1,6 @@
 #header {
   background: #f99132;
-  height: 127px;
+  height: 120px;
   position: absolute;
   width: 100%;
   z-index: 9;
@@ -13,10 +13,11 @@
 #header .logo {
   display: inline-block;
   margin: 10px 0 5px;
+  width: auto;
 }
 #header .logo img {
   height: auto;
-  max-width: 160px;
+  max-width: 140px;
   -webkit-transition: max-width .4s;
   -moz-transition: max-width .4s;
   -ms-transition: max-width .4s;
@@ -24,7 +25,7 @@
   transition: max-width .4s;
 }
 #main-nav {
-  margin-top: 50px;
+  margin-top: 48px;
   float: right;
   width: auto;
   -webkit-transition: margin-top .4s;
@@ -34,14 +35,15 @@
   transition: margin-top .4s;
 }
 #main-nav li:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 36px;
 }
 #main-nav li a {
   border: none;
   color: #223e49;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 100%;
   padding: 0;
+  text-decoration: none;
   text-transform: uppercase;
 }
 #main-nav li a:hover {
@@ -54,6 +56,11 @@
 #main-nav.mobile.active ul {
   background: none !important;
   border: none !important;
+}
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  #main-nav li:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   #header.fixed {
@@ -90,7 +97,7 @@
   #main-nav .menu-toggle {
     color: #223e49;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 128%;
     text-align: center;
   }
   #main-nav li a {
