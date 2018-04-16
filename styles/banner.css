@@ -1,17 +1,30 @@
 #banner {
   background: #ffd364;
+  height: 100vh;
   position: relative;
 }
-#banner:before {
+/*#banner:before {*/
+  /*background: url(../img/rocket-up.svg) left top repeat;*/
+  /*background-size: 32px 32px;*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*opacity: .1;*/
+  /*z-index: -1;*/
+/*}*/
+#banner .section-bg {
   background: url(../img/rocket-up.svg) left top repeat;
   background-size: 32px 32px;
-  content: '';
+  /*content: '';*/
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .04;
+  opacity: .1;
   z-index: -1;
 }
 #banner .banner-description h2 {
@@ -57,8 +70,8 @@
 }
 @media screen and (min-width: 768px) {
   #banner {
-    padding-top: 167px;
-    padding-bottom: 40px;
+    padding-top: 180px;
+    padding-bottom: 60px;
     -webkit-transition: padding-top .4s;
     -moz-transition: padding-top .4s;
     -ms-transition: padding-top .4s;
@@ -66,8 +79,8 @@
     transition: padding-top .4s;
   }
   #header.fixed + #banner {
-    padding-top: 140px;
-    padding-bottom: 40px;
+    padding-top: 160px;
+    /*padding-bottom: 40px;*/
   }
   #banner .banner-description,
   #banner .banner-image {

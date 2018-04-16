@@ -10,6 +10,13 @@
       }
     })
 
+    var ypos, image
+    $( window ).scroll(function parallax () {
+      ypos = window.pageYOffset
+      image = $('.section-bg')
+      image.css('transform', 'translate3d(0, ' + ypos * 0.3 + 'px, 0)')
+    });
+
     var acc = document.getElementsByClassName('accordion')
     var i
 
