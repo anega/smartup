@@ -19,9 +19,6 @@
   margin-bottom: 16px;
 }
 #banner .banner-description h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 52px;
   margin-bottom: 8px;
 }
 #banner .banner-description h3 {
@@ -100,10 +97,6 @@
         font-size: 28px;
         line-height: 32px;
         margin-bottom: 12px;
-    }
-    #banner .banner-description h1 {
-        font-size: 40px;
-        line-height: 44px;
     }
   #banner .banner-description ul {
     display: inline-block;
