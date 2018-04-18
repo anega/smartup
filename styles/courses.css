@@ -5,11 +5,14 @@
 .course-description h1 {
   /*color: #fff;*/
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   text-align: center;
 }
 .boxes-list {
   margin: 0 0 40px;
+}
+.box-item:first-child .panel {
+  
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -17,36 +20,45 @@
   border: none;
   color: #223e49;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
   position: relative;
-  padding: 0 30px 0 0;
+  padding: 0 35px 0 0;
   outline: none;
   min-height: 42px;
-  /*width: 100%;*/
 }
-.accordion:before,
-.accordion:after {
+.accordion .opener {
+  border: 2px solid #223e49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  height: 24px;
+  width: 24px;
+}
+.accordion .opener:before,
+.accordion .opener:after {
   background: #223e49;
   content: '';
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
   height: 2px;
-  width: 8px;
+  width: 14px;
 }
-.accordion:before {
-  transform: rotate(-45deg);
-  right: 10px;
+.accordion .opener:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.accordion:after {
-  transform: rotate(45deg);
-  right: 15px;
-  -webkit-transition: right .2s;
-  -moz-transition: right .2s;
-  -ms-transition: right .2s;
-  -o-transition: right .2s;
-  transition: right .2s;
+.accordion .opener:after {
+  transform: rotate(90deg);
+  top: 50%;
+  margin-top: -1px;
+  margin-left: -7px;
+  -webkit-transition: transform .4s;
+  -moz-transition: transform .4s;
+  -ms-transition: transform .4s;
+  -o-transition: transform .4s;
+  transition: transform .4s;
 }
 /*.accordion:hover:before,*/
 /*.accordion:hover:after,*/
@@ -54,8 +66,8 @@
 /*.active.accordion:after {*/
   /*background: #fff;*/
 /*}*/
-.active.accordion:after {
-  right: 10px;
+.active.accordion .opener:after {
+  transform: rotate(-180deg);
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
