@@ -3,7 +3,7 @@
   position: relative;
 }
 #banner .section-bg {
-  background: url(../img/rocket-up-1.svg) left top repeat;
+  background: url(../img/rocket-up.svg) left top repeat;
   background-size: 32px 32px;
   position: absolute;
   top: 0;

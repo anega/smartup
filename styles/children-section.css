@@ -1,8 +1,15 @@
 #for-children {
   background: #6f9fcd;
+  overflow: hidden;
 }
-#for-children .course-description .boxes-list .box-item p {
-  line-height: 20px;
-  margin: 0 0 10px;
-  padding: 0 10px;
+#for-children .section-bg {
+  background: url(../img/space-shuttle.svg) left top repeat;
+  background-size: 32px 32px;
+  position: absolute;
+  top: -500px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .05;
+  z-index: -1;
 }
