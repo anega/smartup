@@ -1,5 +1,6 @@
 #for-babies {
-  background: #a8ff94;
+  background: #fff;
+  border-top: 4px dashed #a8ff94;
   overflow: hidden;
 }
 #for-babies .section-bg {
@@ -10,6 +11,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .05;
+  opacity: .2;
   z-index: -1;
+}
+#for-babies .contact-me-btn:hover {
+  background: rgba(168, 255, 148, .4);
 }

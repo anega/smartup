@@ -1,5 +1,6 @@
 #contact-us {
-  background: #ffd364;
+  background: #fff;
+  border-top: 4px dashed #ffd364;
   margin-bottom: 170px;
 }
 /*#contact-us .section-bg {*/
@@ -26,8 +27,8 @@
   margin: 0 24px 10px 0;
 }
 #contact-us p {
-  line-height: 20px;
-  margin-bottom: 8px;
+  line-height: 24px;
+  margin-bottom: 12px;
 }
 #contact-us p a {
   color: #223e49;

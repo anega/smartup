@@ -1,5 +1,6 @@
 #banner {
-  background: #ffd364;
+  background: #fff;
+  /*border-bottom: 4px dashed #ffd364;*/
   position: relative;
 }
 #banner .section-bg {
@@ -10,7 +11,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .15;
+  opacity: .08;
   z-index: -1;
 }
 #banner .banner-description h2 {

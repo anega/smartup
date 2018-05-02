@@ -1,5 +1,6 @@
 #for-children {
-  background: #6f9fcd;
+  background: #fff;
+  border-top: 4px dashed #6f9fcd;
   overflow: hidden;
 }
 #for-children .section-bg {
@@ -10,6 +11,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .05;
+  opacity: .12;
   z-index: -1;
+}
+#for-children .contact-me-btn:hover {
+  background: rgba(111, 159, 205, .4);
 }
