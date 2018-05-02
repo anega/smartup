@@ -13,15 +13,15 @@
 <body>
 <div id="header" class="section-wrap">
     <header class="section">
-        <a href="#" class="logo">
+        <a href="#banner" class="logo stellarnav">
             <img src="img/logo-smartup.png" alt="Smartup logo">
         </a>
         <nav id="main-nav" class="stellarnav">
             <ul>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Малюкам</a></li>
-                <li><a href="#">Учням</a></li>
-                <li><a href="#">Від засновника</a></li>
+                <li><a href="#banner">Про нас</a></li>
+                <li><a href="#for-babies">Малюкам(1,5 - 6 років)</a></li>
+                <li><a href="#for-children">Учням(від 6 років)</a></li>
+                <li><a href="#contact-us">Від засновника</a></li>
             </ul>
         </nav>
     </header>
@@ -30,41 +30,45 @@
     <div class="section clearfix">
         <div class="banner-description">
             <h2>Пізнавальний простір</h2>
-            <h1>Smart Up</h1>
+            <h1 class="section-title">Smart Up</h1>
             <h3>child-led education</h3>
             <ul>
-                <li>для дітей від 1,5 років</li>
-                <li>комфортне інноваційне середовище</li>
-                <li>графік роботи 24\7</li>
-                <li>англійська з пелюшок</li>
-                <li>зручне розташування на Оболоні</li>
-                <li>найкращі педагоги</li>
+                <li><i class="fas fa-globe"></i> здоровий баланс фізичного, ментального та емоційного розвитку</li>
+                <li><i class="fas fa-globe"></i> садочок та школа повного дня</li>
+                <li><i class="fas fa-globe"></i> комфортне інноваційне середовище</li>
+                <li><i class="fas fa-globe"></i> графік роботи 24\7</li>
+                <li><i class="fas fa-globe"></i> англомовне середовище</li>
+                <li><i class="fas fa-globe"></i> зручне розташування на Оболоні</li>
+                <li><i class="fas fa-globe"></i> розвиток компетенцій для щасливого та успішного життя</li>
             </ul>
         </div>
         <div class="banner-image">
             <img src="img/banner-image.png" alt="Smartup banner image">
         </div>
     </div>
+    <div class="section-bg"></div>
 </div>
 
 <!-- Babies(1,5-6 років) -->
 <div id="for-babies" class="section-wrap">
     <div class="section">
         <div class="course-description">
-            <h1>Малюкам(1,5-6 років)</h1>
+            <h1 class="section-title">Малюкам(1,5-6 років)</h1>
             <div class="boxes-list clearfix">
                 <div class="box-item">
-                    <button class="accordion">Програма та підходи</button>
-                    <ul class="panel">
+                    <img src="img/section-space.png" alt="">
+                    <p>Програма та підходи</p>
+                    <ul>
                         <li>Унікальна програма розвитку дитини, побудована на принципах Реджио-педагогіки, включає в себе всебічний розвиток дитини, емпіричне, ігрове та проектне навчання</li>
                         <li>Люблячі вихователі, що пройшли навчання та знаходять підхід до кожної дитини</li>
                         <li>Дитина перебуває у безпечному та вільному середовищі, має можливість проживати кожну хвилині цікаво та щасливо</li>
-                        <li>Ми створили простір, в якому дитини не просто вивчає англійську на уроках, а й поступово занурюється у англомовне середовище</li>
+                        <li>Ми створили простір, в якому дитина не просто вивчає англійську на уроках, а й поступово занурюється у англомовне середовище</li>
                     </ul>
                 </div>
                 <div class="box-item">
-                    <button class="accordion">Побут та облаштування простору</button>
-                    <ul class="panel">
+                    <img src="img/section-rocket.png" alt="">
+                    <p>Побут та облаштування простору</p>
+                    <ul>
                         <li>Безпека та ергономічність меблів та усього оточення гарантуються світовими виробниками</li>
                         <li>Ретельно підібрані іграшки, книги та матеріали дають можливість дитині пізнавати та вчитися через гру</li>
                         <li>Простора територія для прогулянок - місце для рухливих активностей на свіжому повітрі, діти проводять на свіжому повітрі не менше 2 годин на день</li>
@@ -72,8 +76,9 @@
                     </ul>
                 </div>
                 <div class="box-item">
-                    <button class="accordion">Дитина у центрі навчально-виховного процесу</button>
-                    <ul class="panel">
+                    <img src="img/section-astronaut.png" alt="">
+                    <p>Дитина у центрі навчально-виховного процесу</p>
+                    <ul>
                         <li>Найголовніше для нас - це щастя дитини</li>
                         <li>Всебічно спланований процес адаптації проходить без сліз. Так, це можливо</li>
                         <li>Ми співпрацюємо з надійним постачальником кейтерингу, що має ліцензію на дитяче харчування та задовольняє будь-які потреби у харчуванні (будь-які дієти)</li>
@@ -83,22 +88,22 @@
             </div>
         </div>
         <div class="course-information">
-            <h1>Вартість та умови</h1>
-            <ul class="icon-with-description-list clearfix">
+            <button class="accordion">Вартість та умови<span class="opener"></span></button>
+            <ul class="panel icon-with-description-list clearfix">
                 <li>
                     <i class="far fa-clock"></i>
                     <h3>Графік</h3>
                     <p>Час роботи пізнавального простору для малюків:<br>8:00 - 19:00</p>
                 </li>
                 <li>
-                    <i class="fas fa-hand-holding-usd"></i>
+                    <i class="fas fa-dollar-sign"></i>
                     <h3>Ціна</h3>
                     <p>7000 грн на місяць. Можливий індивідуальний графік… дізнатися подробиці… При одноразовій оплаті за рік - знижка 10%</p>
                 </li>
             </ul>
-            <div class="boxes-list">
+            <div class="boxes-list clearfix">
                 <div class="box-item">
-                    <button class="accordion">Включає у себе</button>
+                    <button class="accordion">Включає у себе<span class="opener"></span></button>
                     <ul class="panel">
                         <li>Програму навчання та пізнання: українською, російською та англійською мовами</li>
                         <li>Сімейні дні - спільні свята та тренінги для батьків</li>
@@ -108,7 +113,7 @@
                     </ul>
                 </div>
                 <div class="box-item">
-                    <button class="accordion">Оплачується окремо (за бажанням)</button>
+                    <button class="accordion">Оплачується окремо<br>(за бажанням)<span class="opener"></span></button>
                     <ul class="panel">
                         <li>Харчування</li>
                         <li>Додаткові години перебування</li>
@@ -120,6 +125,7 @@
         </div>
         <a href="" class="contact-me-btn">Зв'яжіться зі мною</a>
     </div>
+    <div class="section-bg"></div>
 </div>
 <!-- END Babies(1,5-6 років) -->
 
@@ -127,12 +133,12 @@
 <div id="for-children" class="section-wrap">
     <div class="section">
         <div class="course-description">
-            <h1>Учням (від 6 років)</h1>
+            <h1 class="section-title">Учням (від 6 років)</h1>
             <div class="boxes-list clearfix">
                 <div class="box-item">
-                    <p>Зірки, планети, комети - це той нескінчений всесвіт знань, навичок, відкриттів, пізнавати який ми летимо разом з дитиною. Це програма, дисципліни і форми навчання.</p>
-                    <button class="accordion">Програма і формат навчання</button>
-                    <ul class="panel">
+                    <img src="img/section-space.png" alt="">
+                    <p>Програма і формат навчання</p>
+                    <ul>
                         <li>Освітня програма відповідає Державному стандарту початкової освіти.</li>
                         <li>Програма побудована на проблемно-пошуковому підході</li>
                         <li>Використовуються новітні ефективні форми навчання: тренінгова, проектна, дистанційна</li>
@@ -142,9 +148,9 @@
                     </ul>
                 </div>
                 <div class="box-item">
-                    <p>Ракета - це затишний пізнавальний простір, який супроводжує дитину та забезпечує всім необхідним. Вона зроблена з підходів, цінностей, принципів і правил.</p>
-                    <button class="accordion">Підхід, цінності, правила</button>
-                    <ul class="panel">
+                    <img src="img/section-rocket.png" alt="">
+                    <p>Підхід, цінності, правила</p>
+                    <ul>
                         <li>Навчальний процес побудований таким чином, щоб вид діяльності дитини регулярно змінювався - це підтримує інтерес</li>
                         <li>Ми віримо, що головне - це фізичне та психологічне здоров'я дитини, і створюємо безкомпромісні умови для цього. У нас передбачені зони для відпочинку і багато спортивних активностей</li>
                         <li>Багато процесів направлено на допомогу батькам: можливість цілодобового перебування, медогляди, спільні тренінги, відсутність домашніх завдань - все для того, щоб вільний час приносив тільки радість</li>
@@ -153,9 +159,9 @@
                     </ul>
                 </div>
                 <div class="box-item">
-                    <p>Маленький астронавт управляє ракетою і підкорює космос. Він росте і змінюється, а ми допомагаємо йому розвивати особистісні компетенції, необхідні для успішного і щасливого життя.</p>
-                    <button class="accordion">Розвиток компетенцій</button>
-                    <ul class="panel">
+                    <img src="img/section-astronaut.png" alt="">
+                    <p>Розвиток компетенцій</p>
+                    <ul>
                         <li>Ми бачимо свою основну функцію у тому, щоб <strong>навчити дитину вчитися</strong>. Самостійно, без натиску зовні. Задавати питання та шукати відповіді</li>
                         <li><strong>Емоційний інтелект</strong> - здатність розуміти себе та оточуючих. Люди з високим емоційним інтелектом успішні та щасливі</li>
                         <li><strong>Критичне мислення</strong> - компетенція, що дозволить дитині бути завжди “шукачем”, аналізувати та зважувати</li>
@@ -167,8 +173,8 @@
             </div>
         </div>
         <div class="course-information">
-            <h1>Вартість та умови</h1>
-            <ul class="icon-with-description-list clearfix">
+            <button class="accordion">Вартість та умови<span class="opener"></span></button>
+            <ul class="panel icon-with-description-list clearfix">
                 <li>
                     <i class="far fa-clock"></i>
                     <h3>Графік</h3>
@@ -176,15 +182,15 @@
                     <p>Час занять: 9:00 - 18:00</p>
                 </li>
                 <li>
-                    <i class="fas fa-hand-holding-usd"></i>
+                    <i class="fas fa-dollar-sign"></i>
                     <h3>Ціна</h3>
                     <p>8000 грн на місяць за 9 місяців навчання: з вересня по травень включно</p>
                     <p>При одноразовій оплаті за рік - знижка 10%</p>
                 </li>
             </ul>
-            <div class="boxes-list">
+            <div class="boxes-list clearfix">
                 <div class="box-item">
-                    <button class="accordion">Включає у себе</button>
+                    <button class="accordion">Включає у себе<span class="opener"></span></button>
                     <ul class="panel">
                         <li>Програму навчання: загальноосвітні предмети, 10 годин англійскої на тиждень, розвиток компетенцій</li>
                         <li>Сімейні дні - спільні свята та тренінги для батьків</li>
@@ -195,7 +201,7 @@
                     </ul>
                 </div>
                 <div class="box-item">
-                    <button class="accordion">Оплачується окремо (за бажанням)</button>
+                    <button class="accordion">Оплачується окремо<br>(за бажанням)<span class="opener"></span></button>
                     <ul class="panel">
                         <li>Харчування</li>
                         <li>Додаткові години перебування</li>
@@ -208,12 +214,14 @@
         </div>
         <a href="" class="contact-me-btn">Зв'яжіться зі мною</a>
     </div>
+    <div class="section-bg"></div>
 </div>
 <!-- END Children (від 6 років) -->
 
 <div id="contact-us" class="section-wrap">
     <div class="section">
-        <h1>Від засновника</h1>
+        <h1 class="section-title">Від засновника</h1>
+        <img src="img/Irina-Grabenko-bw.jpg" alt="Irina Grabenko">
         <p>Привіт! Якщо ви зайшли на цю сторінку, значить ви шукаєте для своєї дитини найкращого і в цьому ми схожі.</p>
         <p>Мене звати Ірина Грабенко. Я маю понад 10 років досвіду у навчанні, коучінгу, консультуванні дорослих. Працюючи з людьми, я допомагала їм знаходити свій шлях, розвиватися та будувати кар’єру, боротися зі своїми страхами, та долати внутрішні перешкоди. І кожного дня я бачила як сильно дорослим людям заважають травми та негативний досвід, отримані у дитячому садку чи школі.</p>
         <p>Якщо змалечку дитину не навчити самостійності, не привити любов до навчання, повагу до себе та оточуючих, то вона виростає у дорослого, що не вміє організовувати своє життя, будувати стосунки, досягати цілі.</p>
@@ -247,5 +255,6 @@
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/script.js"></script>
 <script src="scripts/stellarnav.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 </body>
 </html>
