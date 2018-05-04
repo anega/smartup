@@ -83,6 +83,30 @@
     max-width: 40%;
     margin-top: 60px;
   }
+  #banner .parallax-imageset {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+  }
+  #banner .parallax-imageset .parallax-rocket {
+    opacity: .2;
+    position: absolute;
+    vertical-align: top;
+    height: auto;
+    width: 100%;
+  }
+  #banner .parallax-imageset .parallax-rocket.rocket-l {
+    left: 30px;
+    max-width: 450px;
+  }
+  #banner .parallax-imageset .parallax-rocket.rocket-m {
+    right: 80px;
+    max-width: 200px;
+  }
+  #banner .parallax-imageset .parallax-rocket.rocket-s {
+    left: 65%;
+    max-width: 80px;
+  }
 }
 @media screen and (max-width: 768px) {
   #banner {
@@ -112,5 +136,8 @@
   #banner .banner-image {
     margin: 0 auto;
     max-width: 500px;
+  }
+  #banner .parallax-imageset {
+    display: none;
   }
 }

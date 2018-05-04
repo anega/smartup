@@ -10,14 +10,6 @@
       }
     })
 
-    // Section background image parallax
-    var ypos, image
-    $(window).scroll(function parallax () {
-      ypos = window.pageYOffset
-      image = $('.section-bg')
-      image.css('transform', 'translate3d(0, ' + ypos * 0.2 + 'px, 0)')
-    })
-
     // Accordion section functionality
     var acc = document.getElementsByClassName('accordion')
     var i
@@ -35,11 +27,26 @@
     }
 
     // Dynamically get screen width
-    var sectionOffsetTop
+    var isMobileWidth
     $(window).resize(function () {
       var viewportWidth = $(window).width()
-      sectionOffsetTop = viewportWidth > 768 ? 90 : 0
+      isMobileWidth = viewportWidth > 768 ? 90 : 0
     })
+
+    // Section background image parallax
+    if (isMobileWidth !== 0) {
+      $(window).scroll(function (e) {
+        parallax()
+      })
+    }
+
+    function parallax () {
+      var scrolled = $(window).scrollTop()
+      var bannerSection = $('#banner')
+      bannerSection.find('.rocket-l').css('transform', 'translate3d(0, ' + scrolled * -6 + 'px, 0)')
+      bannerSection.find('.rocket-m').css('transform', 'translate3d(0, ' + scrolled * -3.5 + 'px, 0)')
+      bannerSection.find('.rocket-s').css('transform', 'translate3d(0, ' + scrolled * -1.5 + 'px, 0)')
+    }
 
     // Select all links with hashes
     // hook a click event on the body and use event delegation
