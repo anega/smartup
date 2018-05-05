@@ -43,13 +43,22 @@
     function parallax () {
       var scrolled = $(window).scrollTop(),
         bannerSection = $('#banner'),
-        babiesSection = $('#for-babies')
+        babiesSection = $('#for-babies'),
+        childrenSection = $('#for-children'),
+        elementOffset = childrenSection.offset().top,
+        distance = (elementOffset - scrolled)
         bannerSection.find('.rocket-l').css('transform', 'translate3d(0, ' + scrolled * -6 + 'px, 0)')
-        bannerSection.find('.rocket-m').css('transform', 'translate3d(0, ' + scrolled * -3.5 + 'px, 0)')
-        bannerSection.find('.rocket-s').css('transform', 'translate3d(0, ' + scrolled * -1.5 + 'px, 0)')
-        babiesSection.find('.star-l').css('transform', 'rotate(' + scrolled * 0.4 + 'deg)')
-        babiesSection.find('.star-m').css('transform', 'rotate(' + scrolled * 2 + 'deg)')
-        babiesSection.find('.star-s').css('transform', 'rotate(' + scrolled * 6 + 'deg)')
+      bannerSection.find('.rocket-m').css('transform', 'translate3d(0, ' + scrolled * -3.5 + 'px, 0)')
+      bannerSection.find('.rocket-s').css('transform', 'translate3d(0, ' + scrolled * -1.5 + 'px, 0)')
+      babiesSection.find('.star-l').css('transform', 'rotate(' + scrolled * 0.4 + 'deg)')
+      babiesSection.find('.star-m').css('transform', 'rotate(' + scrolled * 2 + 'deg)')
+      babiesSection.find('.star-s').css('transform', 'rotate(' + scrolled * 6 + 'deg)')
+
+      if (distance < 700) {
+        childrenSection.find('.shuttle-l').css('transform', 'translate3d(' + -distance + 'px, ' + distance * 1.5 + 'px, 0)')
+        childrenSection.find('.shuttle-m').css('transform', 'translate3d(' + distance * -1.5 + 'px, ' + distance * 1.5 + 'px, 0)')
+        childrenSection.find('.shuttle-s').css('transform', 'translate3d(' + -distance + 'px, ' + distance * 1.5 + 'px, 0)')
+      }
     }
 
     // Select all links with hashes

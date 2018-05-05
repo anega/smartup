@@ -3,17 +3,66 @@
   border-top: 4px dashed #6f9fcd;
   overflow: hidden;
 }
-#for-children .section-bg {
-  background: url(../img/space-shuttle.svg) left top repeat;
-  background-size: 32px 32px;
-  position: absolute;
-  top: -500px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: .12;
-  z-index: -1;
-}
+/*#for-children .section-bg {*/
+/*background: url(../img/space-shuttle.svg) left top repeat;*/
+/*background-size: 32px 32px;*/
+/*position: absolute;*/
+/*top: -500px;*/
+/*right: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*opacity: .12;*/
+/*z-index: -1;*/
+/*}*/
 #for-children .contact-me-btn:hover {
   background: rgba(111, 159, 205, .4);
+}
+@media screen and (min-width: 768px) {
+  #for-children .parallax-imageset {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  #for-children .parallax-imageset .parallax-shuttle {
+    opacity: .4;
+    position: absolute;
+    vertical-align: top;
+    height: auto;
+    width: 100%;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-l {
+    right: 300px;
+    top: 70%;
+    max-width: 350px;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-m {
+    top: 100%;
+    left: 80px;
+    max-width: 150px;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-m + .shuttle-m {
+    top: 10%;
+    left: 300px;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-s {
+    top: 80px;
+    right: 15%;
+    max-width: 30px;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-s + .shuttle-s {
+    top: 90%;
+    right: 50%;
+  }
+  #for-children .parallax-imageset .parallax-shuttle.shuttle-s + .shuttle-s + .shuttle-s {
+    top: 150%;
+    right: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #for-children .parallax-imageset {
+    display: none;
+  }
 }
