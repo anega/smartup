@@ -34,13 +34,13 @@
     width: 100%;
   }
   #for-children .parallax-imageset .parallax-shuttle.shuttle-l {
-    right: 300px;
+    right: 400px;
     top: 70%;
     max-width: 350px;
   }
   #for-children .parallax-imageset .parallax-shuttle.shuttle-m {
     top: 100%;
-    left: 80px;
+    left: -400px;
     max-width: 150px;
   }
   #for-children .parallax-imageset .parallax-shuttle.shuttle-m + .shuttle-m {
