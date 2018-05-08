@@ -3,17 +3,6 @@
   border-top: 4px dashed #a8ff94;
   overflow: hidden;
 }
-/*#for-babies .section-bg {*/
-  /*background: url(../img/star.svg) 15px top repeat;*/
-  /*background-size: 32px 32px;*/
-  /*position: absolute;*/
-  /*top: -500px;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-  /*opacity: .2;*/
-  /*z-index: -1;*/
-/*}*/
 #for-babies .contact-me-btn:hover {
   background: rgba(168, 255, 148, .4);
 }
@@ -27,7 +16,7 @@
     left: 0;
   }
   #for-babies .parallax-imageset .parallax-star {
-    opacity: .4;
+    opacity: .5;
     position: absolute;
     vertical-align: top;
     height: auto;
