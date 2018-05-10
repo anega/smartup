@@ -94,10 +94,6 @@
   margin: 0 auto;
   text-align: center;
 }
-.course-information .box-item {
-  float: left;
-  width: 50%;
-}
 .course-information .opener {
   border: 2px solid #223e49;
   border-radius: 50%;
@@ -138,6 +134,9 @@
 .course-information .icon-with-description-list {
   margin-bottom: 45px;
 }
+.course-information .icon-with-description-list li {
+  text-align: center;
+}
 .course-information .icon-with-description-list li i {
   font-size: 64px;
   margin-bottom: 25px;
@@ -151,6 +150,19 @@
   margin: 0 auto;
   max-width: 420px;
 }
+@media screen and (max-width: 768px) {
+  .box-item img {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 450px;
+  }
+  .course-information .icon-with-description-list li {
+    margin-bottom: 32px;
+  }
+  .course-information .boxes-list .box-item {
+    margin-bottom: 25px;
+  }
+}
 @media screen and (min-width: 768px) {
   .boxes-list .box-item {
     text-align: center;
@@ -159,9 +171,12 @@
     float: left;
     width: 33%;
   }
+  .course-information .box-item {
+    float: left;
+    width: 50%;
+  }
   .course-information .icon-with-description-list li {
     float: left;
-    text-align: center;
     width: 50%;
   }
 }
