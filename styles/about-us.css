@@ -1,10 +1,10 @@
-#contact-us {
+#about-us {
   background: #fff;
   border-top: 4px dashed #ffd364;
   margin-bottom: 170px;
   overflow: hidden;
 }
-#contact-us .section-bg {
+#about-us .section-bg {
   background-color: rgba(255, 255, 255, 1);
   background-image: url(../img/Irina-Grabenko-with-kids-copy.jpg);
   background-attachment: fixed;
@@ -18,27 +18,27 @@
   left: 0;
   z-index: -1;
 }
-#contact-us .section {
+#about-us .section {
   padding: 60px 0;
 }
-#contact-us h1 {
+#about-us h1 {
   font-size: 32px;
   margin-bottom: 40px;
   text-align: center;
 }
-#contact-us img {
+#about-us img {
   float: left;
   margin: 0 24px 10px 0;
 }
-#contact-us p {
+#about-us p {
   line-height: 24px;
   margin-bottom: 12px;
 }
-#contact-us p a {
+#about-us p a {
   color: #223e49;
 }
 @media screen and (min-width: 768px) {
-  #contact-us .section-bg {
+  #about-us .section-bg {
     background: url(../img/Irina-Grabenko-with-kids-copy.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center top;
@@ -50,7 +50,7 @@
     left: 0;
     z-index: -1;
   }
-  #contact-us .section-bg:before {
+  #about-us .section-bg:before {
     background: rgba(255, 255, 255, .7);
     content: '';
     position: absolute;
