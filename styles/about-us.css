@@ -1,0 +1,80 @@
+#about-us {
+  background: #fff;
+  border-top: 4px dashed #ffd364;
+  overflow: hidden;
+}
+#about-us .section-bg {
+  display: none;
+}
+#about-us .section {
+  padding: 60px 0;
+}
+#about-us h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#about-us p {
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+#about-us p a {
+  color: #223e49;
+}
+@media screen and (max-width: 1024px) {
+  #about-us p {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #about-us {
+    margin-bottom: 170px;
+  }
+  #about-us .section-bg {
+    background: url(../img/Irina-Grabenko-with-kids-copy.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 560px) {
+  #about-us .section img {
+    display: block;
+    margin: 0 auto 24px;
+  }
+}
+@media screen and (min-width: 560px) {
+  #about-us .section img {
+    display: none;
+  }
+  #about-us .section-bg {
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url(../img/Irina-Grabenko-with-kids-copy.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #about-us .section-bg:before {
+    background: rgba(255, 255, 255, .7);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

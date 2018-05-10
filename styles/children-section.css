@@ -6,6 +6,11 @@
 #for-children .contact-me-btn:hover {
   background: rgba(111, 159, 205, .4);
 }
+#for-children .box-item p:first-of-type {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
 @media screen and (min-width: 768px) {
   #for-children .parallax-imageset {
     position: absolute;
