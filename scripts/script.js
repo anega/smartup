@@ -1,5 +1,12 @@
 (function ($) {
   $(document).ready(function () {
+    $('.rrssb-buttons').rrssb({
+      title: 'Smart Up',
+      description: 'Пізнавальний простір. Child-led education.',
+      url: window.location.href,
+      image: $('.logo img').src
+    });
+
     // Sticky header
     $(window).scroll(function () {
       if ($(this).scrollTop() > 1) {
