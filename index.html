@@ -6,9 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Startsmart</title>
+
+    <!-- Facebook meta properties for sharing -->
+    <meta property="og:url"           content="http://smartup.site" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Smart Up" />
+    <meta property="og:description"   content="Пізнавальний простір. Child-led education." />
+    <meta property="og:image"         content="img/logo-smartup.png" />
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/stellarnav.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/rrssb.css" />
 </head>
 <body>
 <div id="header" class="section-wrap">
@@ -269,6 +278,20 @@
                 <i class="fab fa-facebook-f"></i>
                 <a href="https://www.facebook.com/smartup.space/" target="_blank">Facebook</a>
             </p>
+
+            <!-- Buttons start here. Copy this ul to your document. -->
+            <ul class="share-buttons rrssb-buttons clearfix">
+                <li class="rrssb-facebook">
+                    <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://smartup.site" class="popup">
+                        <span class="rrssb-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span class="rrssb-text">Поширити у Facebook</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Buttons end here -->
         </div>
     </div>
 </footer>
@@ -277,5 +300,6 @@
 <script src="scripts/script.js"></script>
 <script src="scripts/stellarnav.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+<script src="scripts/rrssb.min.js"></script>
 </body>
 </html>

@@ -67,3 +67,68 @@ body {
   color: #000;
   border-color: #000;
 }
+footer .share-buttons.rrssb-buttons {
+  color: #223e49;
+  display: block;
+  height: auto;
+  font-size: 14px !important;
+  padding: 0;
+  width: auto;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook {
+  margin-top: 12px;
+  width: auto !important;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a {
+  background: none;
+  padding: 0;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a:active {
+  box-shadow: none;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a:hover {
+  background: none;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a:hover .rrssb-text {
+  text-decoration: underline;
+  text-decoration-color: #223e49;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a .rrssb-icon {
+  display: inline;
+  padding: 0 12px 0 0;
+  position: relative;
+  right: auto;
+  left: auto;
+}
+footer .share-buttons.rrssb-buttons .rrssb-facebook a span {
+  color: #223e49;
+  font: 400 14px Helvetica, Arial, sans-serif;
+  text-transform: none;
+}
+@media screen and (max-width: 768px) {
+  footer .share-buttons.rrssb-buttons {
+    background: #306199;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+  }
+  footer .share-buttons.rrssb-buttons:hover {
+    background: #244872;
+  }
+  footer .share-buttons.rrssb-buttons .rrssb-facebook {
+    float: none;
+    margin-top: 0;
+    text-align: center;
+  }
+  footer .share-buttons.rrssb-buttons .rrssb-facebook a:active {
+    box-shadow: none;
+  }
+  footer .share-buttons.rrssb-buttons .rrssb-facebook a span {
+    color: #fff;
+  }
+}
