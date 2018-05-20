@@ -1,5 +1,6 @@
 (function ($) {
   $(document).ready(function () {
+    // Initialize rrssb buttons(responsive sharing buttons)
     $('.rrssb-buttons').rrssb({
       title: 'Smart Up',
       description: 'Пізнавальний простір. Child-led education.',
@@ -54,7 +55,7 @@
         childrenSection = $('#for-children'),
         elementOffset = childrenSection.offset().top,
         distance = (elementOffset - scrolled)
-        bannerSection.find('.rocket-l').css('transform', 'translate3d(0, ' + scrolled * -6 + 'px, 0)')
+      bannerSection.find('.rocket-l').css('transform', 'translate3d(0, ' + scrolled * -6 + 'px, 0)')
       bannerSection.find('.rocket-m').css('transform', 'translate3d(0, ' + scrolled * -3.5 + 'px, 0)')
       bannerSection.find('.rocket-s').css('transform', 'translate3d(0, ' + scrolled * -1.5 + 'px, 0)')
       babiesSection.find('.star-l').css('transform', 'rotate(' + scrolled * 0.4 + 'deg)')
